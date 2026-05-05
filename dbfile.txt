@@ -1,0 +1,9 @@
+BAL:16.0
+INV:apple,5.0,3
+INV:orange,3.0,5
+HIS:Balance update: 10.0
+HIS:Balance update: 10.0
+HIS:Purchase: apple x3
+HIS:Balance update: 20.0
+HIS:Purchase: orange x8
+HIS:Sold: orange x3
