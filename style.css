@@ -1,0 +1,31 @@
+body {
+    background-color: #f7f8f9;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.hero {
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.btn-group-block {
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.mt-2 { margin-top: 1rem; }
+.mb-2 { margin-bottom: 1rem; }

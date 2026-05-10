@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+	<link rel="stylesheet" href="style.css">
+    <title>Balance Change</title>
+</head>
+<body class="p-2">
+    <div class="container grid-sm">
+        <div class="card shadow p-2">
+            <h3>Change Balance</h3>
+            <form action="/balance" method="POST">
+                <div class="form-group">
+                    <label class="form-label">Operation Type</label>
+                    <select class="form-select" name="type">
+                        <option value="add">Add (+)</option>
+                        <option value="subtract">Subtract (-)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="value">Amount</label>
+                    <input class="form-input" type="number" step="0.01" id="value" name="value" placeholder="0.00" required>
+                </div>
+                <div class="form-footer mt-2">
+                    <button class="btn btn-primary" type="submit">Update Balance</button>
+                    <a href="index.html" class="btn">Back</a>
+                </div>
+				<div class="form-footer mt-2">
+      <a href="index.html" class="btn btn-link px-0"><i class="icon icon-back"></i> Back to Dashboard</a>
+    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

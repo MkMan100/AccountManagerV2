@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+	<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<title>Purchase</title>
+</head>
+
+<body>
+	<div class="container grid-sm">
+  <h3>New Purchase</h3>
+  <form action="/purchase" method="POST" class="form-horizontal">
+    <div class="form-group">
+      <label class="form-label" for="product">Product Name</label>
+      <input class="form-input" type="text" id="product" name="product" placeholder="e.g. Apples" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="price">Unit Price</label>
+      <input class="form-input" type="number" step="0.01" id="price" name="price" placeholder="0.00" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="quantity">Quantity</label>
+      <input class="form-input" type="number" id="quantity" name="quantity" placeholder="0" required>
+    </div>
+    <div class="form-footer mt-2">
+      <button class="btn btn-primary" type="submit">Submit Purchase</button>
+      <a href="/" class="btn">Cancel</a>
+    </div>
+	  <div class="form-footer mt-2">
+      <a href="index.html" class="btn btn-link px-0"><i class="icon icon-back"></i> Back to Dashboard</a>
+    </div>
+  </form>
+</div>
+</body>
+</html>
